@@ -115,7 +115,7 @@ const Formulario = ({ titulo, campos, botonTexto, estado, cambiarEstado, action,
                           onChange={(e) => {
                             setValue(campo.name, e.target.value)
 
-                            if (campo.name === 'MUNICIPIO_id' && (titulo === 'Registro de Vivienda' || titulo === 'Registro de Persona' || titulo === 'Editar Persona' || titulo === 'Editar Vivienda' || titulo === 'Registro de Vivienda')) setSelect(e.target.value)
+                            if (campo.name === 'MUNICIPIO_id' && (titulo === 'Registro de Vivienda' || titulo === 'Registro de Persona' || titulo === 'Editar Persona' || titulo === 'Editar Vivienda' || titulo === 'Registro de Vivienda' || titulo === 'Registro de Propietario')) setSelect(e.target.value)
                           }}
                         >
                           {campo.options.map(option => (
