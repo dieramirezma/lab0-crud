@@ -2,20 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: url('/fonts/MerriweatherSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto&display=swap');
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
   }
 }
 
+
+
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.normal-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #383838
+}
+
+.title {
+  font-family: 'Merriweather Sans', serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #1A3D5D;
+}
+
+.subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
 }
