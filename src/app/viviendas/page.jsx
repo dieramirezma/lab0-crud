@@ -268,7 +268,7 @@ export default function Viviendas () {
 
   const filteredData = dataWithActions.filter(vivienda =>
     vivienda.direccion.toLowerCase().includes(search.toLowerCase()) ||
-    vivienda.tipo.toLowerCase().includes(search.toLowerCase())
+    vivienda.municipio_nombre.toLowerCase().includes(search.toLowerCase())
   )
 
   return (
